@@ -5,7 +5,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/converter_moeda', methods=['POST'])
+@app.route('/conversor', methods=['POST'])
 def converter_moeda():
     reais = float(request.form['reais'])
 
